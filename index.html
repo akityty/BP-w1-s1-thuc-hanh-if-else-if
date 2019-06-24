@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực Hành If else If</title>
+</head>
+<body>
+
+<!--Tên Đăng Nhập:-->
+<!--<input id="id" value="">-->
+<!--Mật Khẩu:-->
+<!--<input id="pass"value="">-->
+<script>
+    let user = prompt("who are you?");
+    if(user == "admin") {
+        let pass = prompt("input your password");
+        if (pass == "themaster")
+            alert("welcom");
+         else if (pass == "")
+            alert("Canceled");
+         else
+            alert("Wrong Password");
+    }
+    else if(user=="")
+        alert("Canceled");
+    else
+        alert("i don'nt know you");
+</script>
+
+</body>
+</html>
